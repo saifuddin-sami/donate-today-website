@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+}
+.header-container {
+    background-image: linear-gradient(rgba(255, 255, 255, 0), #121212), url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.header-txt-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-title {
+    font-size: 65px;
+    color: white;
+    font-weight: bold;
+    font-family: Inter;
+    text-align: center;
+    width: 80%;
+}
+.header-txt {
+    font-size: 18px;
+    font-family: Inter;
+    color: white;
+    width: 55%;
+    text-align: center;
+    margin: 20px 0 30px;
+}
+.header-btn {
+     background-color: #FF5959;
+     color: white;
+     width: auto;
+     height: auto;
+     border-radius: 5px;
+     padding: 16px 20px;
+     font-size: 20px;
+     font-weight: 600;
+     border: none;
+}
+.header-btn:hover {
+    cursor: pointer;
+    color: #FF5959;
+    background-color: white;
+}
+
+/* Small Device */
+@media screen and (max-width: 576px) {
+    .header-container {
+        height: auto;
+        padding: 30px;
+    }    
+    .header-title, .header-txt {
+        width: auto;
+        text-align: left;
+    }
+    .header-txt-container {
+        align-items: start;
+    }
+}
+/* Medium Device */
+@media screen and (min-width: 576px) and (max-width: 868px) {
+    .header-container {
+        padding: 50px;
+    }  
+    .header-title, .header-txt {
+        width: auto;
+    }
+}
