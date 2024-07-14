@@ -118,16 +118,15 @@
 .sec3-boxes {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 0 100px;
+    width: 70%;
     gap: 24px;
 }
 .sec3-box {
-    width: auto;
-    height: auto;
     padding: 50px 23px;
     border-radius: 5px;
-    background-color: rgba(79, 157, 166, 0.1);
+}
+.sec3-box:hover {
+    box-shadow: 5px 5px 10px lightgray;
 }
 .sec3-box-title {
     font-weight: 600;
@@ -197,6 +196,6 @@
 
     .sec3-boxes {
         flex-direction: column;
-        margin: 0 100px;
+        margin: 0 120px;
     }
 }
