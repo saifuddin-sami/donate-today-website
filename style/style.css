@@ -8,11 +8,11 @@
     background-image: linear-gradient(rgba(255, 255, 255, 0), #121212), url(../images/banner.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 170px 0px;
 }
 .header-txt-container {
     display: flex;
@@ -100,6 +100,7 @@
     background-color: rgba(255, 238, 238, 1);
     color: #FF5959;
     border: 2px solid #FF5959;
+    cursor: pointer;
 }
 .sec2-mini-txt {
     color: #b3b3b3;
@@ -142,6 +143,7 @@
 /* Medium Device */
 @media screen and (min-width: 576px) and (max-width: 868px) {
     .header-container {
+        height: auto;
         padding: 50px;
     }  
     .header-title, .header-txt {
